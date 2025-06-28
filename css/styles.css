@@ -26,6 +26,7 @@ header {
     background: #003087;
     color: #fff;
     padding: 2vh 0;
+    wwidth: 100%
 }
 
 header .container {
@@ -66,7 +67,7 @@ nav a:hover {
 .dropdown-button {
     color: #F8F6F3;
     padding: 0.75rem 1rem;
-    font-family: 'Lora', serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: clamp(0.9rem, 2.5vw, 1.1rem);
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -199,6 +200,10 @@ footer ul {
     gap: clamp(1rem, 3vw, 1.5rem);
     margin-top: clamp(0.5rem, 2vw, 0.75rem);
     flex-wrap: wrap;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 footer a {
