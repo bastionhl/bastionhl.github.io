@@ -201,7 +201,6 @@ footer ul {
     gap: clamp(1rem, 3vw, 1.5rem);
     margin-top: clamp(0.5rem, 2vw, 0.75rem);
     flex-wrap: wrap;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
