@@ -51,6 +51,7 @@ nav ul {
 nav a {
     color: #fff;
     text-decoration: none;
+    margin: 0 15px;
     font-size: clamp(0.9rem, 2.5vw, 1rem);
 }
 
