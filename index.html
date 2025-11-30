@@ -1,825 +1,229 @@
-<html lang="en-US" class=" c3_desktop  js_active "><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bastion H&amp;L</title>
-        <link rel="profile" href="http://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bastion H&L LLC | Digital Architecture</title>
+    <style>
+        /* --- EFFICIENT CSS RESET & BASE STYLES --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+       
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #111111;
+            line-height: 1.6;
+            font-size: 16px;
+        }
 
-<link rel="SHORTCUT ICON" href="/pics/bastion.ico">
-<link rel="prefetch" href="https://cdn1.getnetset.com/wp-content/themes/customized/images/textures/transparent/abstract15.png" as="image">
-<link rel="prefetch" href="https://cdn1.getnetset.com/wp-content/themes/customized4/assets/images/gradients/1.png" as="image">
-<link rel="dns-prefetch" href="//fonts.googleapis.com">
-<link rel="stylesheet" id="google-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap" type="text/css" media="all">
-<style id="global-styles-handle-inline-css" type="text/css">
+        /* --- UTILITY CLASSES --- */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-.edit-post-visual-editor main {
-font-family: Open Sans;
-font-size: 14px;
-}
-.page-template-page-rightsidebar #secondary:before,
-.page-template-page-leftsidebar #secondary:before,
-body.blog #secondary:before, body.single #secondary:before {
-background-color: #f8f8f8;
-}
-body.blog,
-body.page,
-body.single,
-body.archive,
-body.search,
-.edit-post-visual-editor__content-area,
-.editor-visual-editor.edit-post-visual-editor {
-background-color: #ebebeb;
+        .btn {
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #000;
+            transition: all 0.2s ease;
+        }
 
-          background-image: url('https://cdn1.getnetset.com/wp-content/themes/customized/images/textures/transparent/abstract15.png');
-          background-repeat: repeat;
-          background-size: initial !important;
-          
-          background-position: top center;
-        
-}
-.editor-styles-wrapper .wp-block-post-content section.text-block,
-#content .entry-content section.text-block {
-background-color: ;
-}
-.shadow {
+        .btn:hover {
+            background-color: #fff;
+            color: #000;
+        }
 
-        background-repeat: repeat-x;
-        background-attachment: fixed;
-        box-shadow: none !important;
-    
-            background-image: url('https://cdn1.getnetset.com/wp-content/themes/customized4/assets/images/gradients/1.png');
-            background-color: ;
-        
-}
-.is-desktop-preview,
-.components-resizable-box__container.editor-resizable-editor {
-box-shadow: none !important;
-            background: url('https://cdn1.getnetset.com/wp-content/themes/customized4/assets/images/gradients/1.png') repeat-x fixed  !important;
-        
-}
-#page {
-padding: 0;
-font-family: Open Sans;
-font-size: 14px;
-max-width:1170px!important;margin-left:auto!important;margin-right:auto!important;
-}
-#page h1,
-#page h2,
-#page h3,
-.wp-block-post-content h1,
-.wp-block-post-content h2,
-.wp-block-post-content h3,
-.countdown_title,
-.slide-title,
-.heading {
-font-family: Open Sans;
-}
-.wp-block-post-content p {
-font-family: Open Sans;
-font-size: 14px;
-line-height: 1.42857143;
-}
-#content section,
-.edit-post-visual-editor__post-title-wrapper,
-.editor-styles-wrapper .wp-block,
-.editor-styles-wrapper .wp-block-gns-call-to-action,
-.editor-styles-wrapper .wp-block-gns-contacts,
-.editor-styles-wrapper .wp-block-gns-fullwidth-map,
-.editor-styles-wrapper .wp-block-gns-grid-block,
-.editor-styles-wrapper .wp-block-gns-services,
-.editor-styles-wrapper .wp-block-gns-service-list,
-.editor-styles-wrapper .wp-block-gns-staff-grid-block,
-.editor-styles-wrapper .editor-bg-helper {
-background-color: #fff;
-}
-.editor-styles-wrapper .wp-block-gns-header0,
-.editor-styles-wrapper .wp-block-gns-header1,
-.editor-styles-wrapper .wp-block-gns-header2,
-.editor-styles-wrapper .wp-block-gns-header3,
-.editor-styles-wrapper .wp-block-gns-header4,
-.editor-styles-wrapper .wp-block-gns-header5,
-.editor-styles-wrapper .wp-block-gns-header7,
-.editor-styles-wrapper .wp-block-gns-header8,
-.editor-styles-wrapper .wp-block-gns-header9,
-.editor-styles-wrapper .wp-block-gns-footer,
-.editor-styles-wrapper .wp-block-gns-contacts-bar,
-.editor-styles-wrapper .wp-block-block {
-background-color: transparent;
-}
-.editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper {
-margin-top: 0 !important;
-padding-top: 4rem;
-}
-html :where(.editor-styles-wrapper) {
-padding: 0;
-}
-.blog a,
-.block-editor-page a,
-.page a,
-.single a,
-.archive a {
-color: #017783;
-}
-.blog a:hover,
-.block-editor-page a:hover,
-.page a:hover,
-.single a:hover,
-.archive a:hover {
-color: #0f3647;
-}
-.wpcf7-submit,
-.btn,
-a.btn,
-.wp-block-button {
-text-decoration: none!important;
--webkit-border-radius: 6px;
--moz-border-radius: 6px;
-border-radius: 6px;
-line-height: 22px;
--webkit-transition: color .25s, background .25s;
--moz-transition: color .25s, background .25s;
--o-transition: color .25s, background .25s;
-transition: color .25s, background .25s;
-border: none;
-color: #ffffff;
-background-color: #337ab7;
-}
-.btn-primary {
-color: #ffffff !important;
-background-color: #337ab7 !important;
-border: none !important;
-}
-.btn-primary:hover {
-color: #ffffff !important;
-background-color: #23527c !important;
-border: none !important;
-}
-.wpcf7-submit:hover,
-.btn:hover,
-.wp-block-button:hover {
-border:none;
-color: #ffffff;
-background-color: #23527c;
-}
-.wp-block-button__link {
-color: inherit;
-background-color: inherit;
-}
-.wp-block-button__link:hover {
-color:inherit;
-}
-.editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper > :where(:not(.alignleft):not(.alignright)),
-.editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper > .alignwide,
-.editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper > .alignfull,
-.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > :where(:not(.alignleft):not(.alignright)),
-.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > .alignwide,
-.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > .alignfull,
-.editor-styles-wrapper div.is-root-container.block-editor-block-list__layout {
-font-family: Open Sans;
-font-size: 14px;
-max-width:1170px!important;margin-left:auto!important;margin-right:auto!important;
-}
+        /* --- HEADER --- */
+        header {
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+        }
 
-</style>
-<link rel="stylesheet" id="cv4-style-css" href="https://cdn1.getnetset.com/wp-content/themes/customized4/build/css/main.css?ver=14500e2202b0700e837c" type="text/css" media="all">
-<link rel="stylesheet" id="bootstrap-css" href="https://cdn1.getnetset.com/wp-content/themes/customized4/lib/bootstrap/css/bootstrap.min.css?ver=3.4.5" type="text/css" media="all">
-<link rel="stylesheet" id="font-awesome-6-css" href="https://cdn1.getnetset.com/wp-content/themes/customized4/lib/fontawesome-6/css/all.min.css?ver=20.6.29" type="text/css" media="all">
-<link rel="stylesheet" id="font-awesome-4-shim-css" href="https://cdn1.getnetset.com/wp-content/themes/customized4/lib/fontawesome-6/css/v4-shims.min.css?ver=20.6.29" type="text/css" media="all">
-<link rel="stylesheet" id="css3-animations-css" href="https://cdn1.getnetset.com/wp-content/themes/customized4/lib/css3-animate-it-master/css/animations.css?ver=0.1.0" type="text/css" media="all">
-<script type="text/javascript" src="https://cdn1.getnetset.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.0" id="jquery-core-js"></script>
-<script type="text/javascript" src="https://cdn1.getnetset.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
-<link rel="https://api.w.org/" href="https://jeffreydshapirocpa.com/wp-json/"><link rel="alternate" type="application/json" href="https://jeffreydshapirocpa.com/wp-json/wp/v2/pages/325"><link rel="shortlink" href="https://jeffreydshapirocpa.com/?p=325">
-<link rel="alternate" type="application/json+oembed" href="https://jeffreydshapirocpa.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjeffreydshapirocpa.com%2Fservices%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://jeffreydshapirocpa.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjeffreydshapirocpa.com%2Fservices%2F&amp;format=xml">
-<style type="text/css">
-	.mu_register #signup_code { width:100%; font-size: 24px; margin:5px 0; }
-</style>
-<!-- SEO meta tags powered by GNS -->
-<link rel="canonical" href="https://jeffreydshapirocpa.com/services/">
-<!-- /SEO -->
-		<style type="text/css">
-			div.wpcf7 .ajax-loader {
-				background-image: url('https://cdn1.getnetset.com/wp-content/plugins/contact-form-7/images/ajax-loader.gif');
-			}
-		</style>
-		<script type="text/javascript">
-		const my_ajax_url = 'https://jeffreydshapirocpa.com/wp-admin/admin-ajax.php';
-		let my_post_id = '325';
-		const copyprotection = '0';
-	</script>
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        /* SVG Logo Recreation (Simplified Fortress) */
+        .logo-svg {
+            width: 50px;
+            height: 50px;
+        }
+
+        .brand-name {
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #555;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        nav a:hover { color: #000; }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            padding: 80px 0;
+            text-align: left;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #555;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        /* --- SERVICES GRID --- */
+        .section-title {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #888;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* --- ABOUT --- */
+        .about {
+            background-color: #f9f9f9;
+            padding: 60px 0;
+            margin-bottom: 60px;
+        }
+
+        .about-content {
+            max-width: 700px;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            padding: 40px 0;
+            border-top: 1px solid #eee;
+            font-size: 0.85rem;
+            color: #888;
+            text-align: center;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2.2rem; }
+            .header-content { flex-direction: column; align-items: flex-start; gap: 20px; }
+            nav { width: 100%; display: flex; justify-content: space-between; }
+            nav a { margin-left: 0; margin-right: 15px; }
+        }
+    </style>
 </head>
-
-<body class="page-template page-template-page-rightsidebar page-template-page-rightsidebar-php page page-id-325">
-    
-    <div class="site-container">
-        <div id="menu-mobile" class="slide "><ul id="menu-main-menu" class="menu"><li id="menu-item-440" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-440"><a href="https://jeffreydshapirocpa.com/">Home</a></li>
-<li id="menu-item-439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-439"><a href="https://jeffreydshapirocpa.com/profile/">Profile</a></li>
-<li id="menu-item-438" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-325 current_page_item menu-item-438"><a href="https://jeffreydshapirocpa.com/services/" aria-current="page">Services</a></li>
-<li id="menu-item-562" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-562"><a href="#">Resources</a>
-<ul class="sub-menu">
-	<li id="menu-item-452" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-452"><a href="https://jeffreydshapirocpa.com/resources/financial-calculators/">Financial Calculators</a></li>
-	<li id="menu-item-456" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-456"><a href="https://jeffreydshapirocpa.com/resources/tax-retention-guide/">Record Retention Guide</a></li>
-	<li id="menu-item-434" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-434"><a href="https://jeffreydshapirocpa.com/resources/irs-publications/">IRS Publications</a></li>
-	<li id="menu-item-431" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-431"><a href="https://jeffreydshapirocpa.com/resources/tax-forms/">IRS Forms</a></li>
-	<li id="menu-item-792" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-792"><a href="/files/Tax-Appointment-Checklist.doc">Tax Appointment Checklist</a></li>
-	<li id="menu-item-432" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-432"><a href="https://jeffreydshapirocpa.com/resources/tax-rates/">Tax Rates</a></li>
-	<li id="menu-item-471" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-471"><a href="https://jeffreydshapirocpa.com/resources/tax-due-dates/">Tax Due Dates</a></li>
-	<li id="menu-item-943" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-943"><a href="https://jeffreydshapirocpa.com/resources/taxpayer-rights/">Taxpayer Rights</a></li>
-	<li id="menu-item-929" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-929"><a href="https://jeffreydshapirocpa.com/resources/tax-glossary/">Tax Glossary</a></li>
-	<li id="menu-item-738" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-738"><a href="https://jeffreydshapirocpa.com/subscribe-to-tax-calendar/">Subscribe to Tax Calendar</a></li>
-	<li id="menu-item-731" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-731"><a href="https://jeffreydshapirocpa.com/irs-withholding-calculator/">IRS Withholding Calculator</a></li>
-	<li id="menu-item-467" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-467"><a href="https://jeffreydshapirocpa.com/resources/where-is-my-refund/">Where is My Refund?</a></li>
-</ul>
-</li>
-<li id="menu-item-563" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-563"><a href="#">Newsletter</a>
-<ul class="sub-menu">
-	<li id="menu-item-564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-564"><a href="/newsletter/">Latest Edition</a></li>
-	<li id="menu-item-572" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-572"><a href="https://jeffreydshapirocpa.com/newsletter-archives/">Newsletter Archives</a></li>
-	<li id="menu-item-577" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-577"><a href="https://jeffreydshapirocpa.com/subscribe/">Subscribe</a></li>
-</ul>
-</li>
-<li id="menu-item-902" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-902"><a>Contact</a>
-<ul class="sub-menu">
-	<li id="menu-item-957" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-957"><a href="https://jeffreydshapirocpa.com/contact/">Contact</a></li>
-	<li id="menu-item-958" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-958"><a href="https://jeffreydshapirocpa.com/contact/request-appointment/">Request Appointment</a></li>
-	<li id="menu-item-926" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-926"><a href="https://jeffreydshapirocpa.com/contact/share-testimonial/">Share Testimonial</a></li>
-</ul>
-</li>
-</ul></div>        <div id="bg-container"></div>
-        <div class="site-content slide">
-            <div class="shadow"></div>
-            <div id="page" class="hfeed site w1170">
-	<link rel="stylesheet" id="header-google-fonts-css" href="https://fonts.googleapis.com/css?family=Raleway&amp;display=swap" type="text/css" media="all">
-<header id="block_325_272dd4d5" class="site-header header-7-wrapper" role="banner">
-    <div class="mobile-menu-wrapper">
-    <div id="navToggle" class="burger">
-        <i class="fa fa-bars"></i>&nbsp;Menu
-    </div>
-</div>
-
-        <div class="header-7">
-                <div id="site-branding" class="site-branding top">
-            <style type="text/css">
-                .header-7-wrapper .sticky-header.site-branding {
-                    background: #ffffffff !important;
-                }
-
-                .header-7-wrapper .sticky-header.main-menu-wrap {
-                    background: #017783 !important;
-                    background-color: #017783 !important;
-                }
-
-                #block_325_272dd4d5 .header-7 {
-                    background-color: #ffffffff;
-                    position: relative;
-                    min-height: 1px;
-                }
-
-                #block_325_272dd4d5 .header-7 .site-branding {
-                    background-color: #ffffffff;
-                    background-image: none;
-                    position: relative;
-                }
-
-                #block_325_272dd4d5 .header-7 .slide__caption,
-                .fz-normal .slide__caption {
-                    color: #000000;
-                    background-color: hsl(0, 0%, 100%);
-                }
-
-                #block_325_272dd4d5 .header-7 .slide__caption .slide-text,
-                .fz-normal .slide__caption .slide-text {
-                    padding: 5px;
-                }
-
-                #block_325_272dd4d5 .header-7 .slide__caption .slide-title,
-                #block_325_272dd4d5 .header-7 .slide__caption .slide-text,
-                .fz-normal .slide__caption .slide-title,
-                .fz-normal .slide__caption .slide-text {
-                    color: #000000;
-                    margin: 0;
-                }
-
-                #block_325_272dd4d5 .header-7 .logo {
-                    color: #031835;
-                }
-
-                #block_325_272dd4d5 .header-7 .site-description {
-                    font-size: 14px;
-                    color: #777777;
-                }
-
-                #block_325_272dd4d5 .header-7 .main-menu-wrap ul {
-                    line-height: 3.5 !important;
-                }
-
-                #block_325_272dd4d5 .header-7 .main-navigation li a {
-                    line-height: 3.5;
-                }
-
-                .header-7 {
-                    position: relative;
-                    min-height: 1px
-                }
-
-                .header-7 h1 {
-                    margin: 0
-                }
-
-                .header-7 .site-branding {
-                    background-image: none;
-                    position: relative
-                }
-
-                .header-7 .slide__caption .slide-text {
-                    padding: 5px;
-                    margin: 0
-                }
-
-                .header-7 .slide__caption .slide-title {
-                    margin: 0
-                }
-
-                .header-7 .tdleft {
-                    padding: 13px 0 13px 15px
-                }
-
-                .header-7 .tdleft img {
-                    max-width: 100%;
-                    margin-left: 10px
-                }
-
-                .header-7 .brand {
-                    margin: 0;
-                    float: left
-                }
-
-                .header-7 .brand:hover {
-                    text-decoration: none
-                }
-
-                .header-7 .brand.logo-size-small img {
-                    max-height: 75px
-                }
-
-                .header-7 .brand.logo-size-normal img {
-                    max-height: 125px
-                }
-
-                .header-7 .main-navigation li a {
-                    padding-top: 0 !important;
-                    padding-bottom: 0 !important
-                }
-
-                .header-7 .brand-text a:hover {
-                    text-decoration: none
-                }
-
-                .header-7 .tdright {
-                    padding: 13px 15px 13px 0;
-                    overflow-wrap: anywhere
-                }
-
-                .header-7 .row .header-7-flex {
-                    display: -webkit-flex;
-                    display: flex;
-                    -webkit-justify-content: space-between;
-                    justify-content: space-between;
-                    -webkit-align-items: center;
-                    align-items: center;
-                    -webkit-flex-direction: row;
-                    flex-direction: row
-                }
-
-                .header-7 .row .header-7-flex>.tdleft {
-                    display: -webkit-flex;
-                    display: flex;
-                    -webkit-align-items: center;
-                    align-items: center;
-                    -webkit-justify-content: start;
-                    justify-content: start;
-                    -webkit-flex-wrap: wrap;
-                    flex-wrap: wrap;
-                    gap: 10px
-                }
-
-                .header-7 .row .header-7-flex>.tdleft>.brand-text {
-                    -webkit-flex: 1 0;
-                    flex: 1 0
-                }
-
-                .header-7 .h7-slider-wrapper .extra-slide,
-                .entry-content .extra-slide {
-                    display: none
-                }
-
-                .header-7 .h7-slider-wrapper.slick-initialized .extra-slide,
-                .entry-content .slick-initialized .extra-slide {
-                    display: block
-                }
-
-                .header-7 .navbar {
-                    border: none
-                }
-
-                .header-7 .site-description {
-                    display: block
-                }
-
-                .header-7 .usual-menu.menu-pos-middle #main-menu {
-                    text-align: center
-                }
-
-                .header-7 .usual-menu.menu-pos-middle #main-menu .nav {
-                    display: inline-block;
-                    float: none !important;
-                    vertical-align: middle
-                }
-
-                .header-7 .usual-menu.menu-pos-left #main-menu .nav {
-                    display: inline-block;
-                    float: none !important;
-                    vertical-align: middle
-                }
-
-                .header-7 .main-menu-wrap .container-fluid .row {
-                    padding: 0
-                }
-
-                @media screen and (max-width: 640px) {
-                    .header-7 .brand {
-                        float: none
-                    }
-                }
-
-                @media screen and (max-width: 767px) {
-                    .header-7 .row {
-                        text-align: center
-                    }
-
-                    .header-7 .row .header-7-flex {
-                        display: -webkit-flex;
-                        display: flex;
-                        -webkit-justify-content: space-between;
-                        justify-content: space-between;
-                        -webkit-align-items: center;
-                        align-items: center;
-                        -webkit-flex-direction: column;
-                        flex-direction: column
-                    }
-
-                    .header-7 .main-menu-wrap {
-                        position: static
-                    }
-
-                    .header-7 .slide__caption {
-                        position: relative;
-                        z-index: 8
-                    }
-
-                    .header-7 .fz-big .slide-title {
-                        font-size: 2em
-                    }
-
-                    .header-7 .fz-big .slide-text {
-                        font-size: 1.4em
-                    }
-
-                    .header-7 .fz-small .slide-title {
-                        font-size: 1.4em
-                    }
-
-                    .header-7 .fz-small .slide-text {
-                        font-size: .9em
-                    }
-
-                    .header-7 .menu-style-tabbed {
-                        border-bottom: 0
-                    }
-
-                    .header-7 .tdleft {
-                        display: inline-block;
-                        padding: 13px 15px
-                    }
-
-                    .header-7 .tdright {
-                        clear: both;
-                        padding: 13px 15px
-                    }
-
-                    .header-7 .brand {
-                        float: none
-                    }
-                }
-
-                @media screen and (min-width: 768px) {
-                    .header-7 .tdleft img {
-                        height: 50px;
-                        margin-right: 10px
-                    }
-
-                    .header-7 .tdleft .brand img {
-                        height: auto !important
-                    }
-
-                    .header-7 .tdright {
-                        text-align: right;
-                        vertical-align: middle;
-                        padding: 13px 15px 13px 0
-                    }
-
-                    .header-7 .tdright h2 {
-                        text-align: right
-                    }
-                }
-
-                            </style>
-            <style type="text/css">
-                #block_325_272dd4d5 .header-logo,
-                #block_325_272dd4d5 span.logo {
-                    font-family: Raleway;
-                    font-weight: bold;
-                    color: #031835;
-                    font-size: 34px;
-                }
-
-                #block_325_272dd4d5.site-header,
-                #block_325_272dd4d5.site-header a,
-                #block_325_272dd4d5.site-header a:hover {
-                    color: #000000;
-                }
-
-                #block_325_272dd4d5 .brand {
-                    font-size: 34px;
-                }
-
-                #block_325_272dd4d5 .main-navigation li a {
-                    color: #fcfcfc;
-                    font-size: 15px;
-                    text-transform: none;
-                }
-
-                #block_325_272dd4d5 .main-navigation .nav>li>a {
-                    color: #fcfcfc;
-                }
-
-                #block_325_272dd4d5 .main-navigation .nav>li>a:hover,
-                #block_325_272dd4d5 .main-navigation .nav>li.open>a,
-                #block_325_272dd4d5 .main-navigation .nav>li.current-menu-item>a {
-                    color: #000000;
-                }
-
-                #block_325_272dd4d5 .main-navigation .nav>li>a:focus,
-                #block_325_272dd4d5 .main-navigation .nav .open a:focus {
-                    color: #fcfcfc;
-                    background-color: transparent;
-                }
-
-                #block_325_272dd4d5 .main-menu-wrap.usual-menu.menu-style-tabbed .main-navigation .nav ul li a,
-                #block_325_272dd4d5 .main-menu-wrap.usual-menu.menu-style-boxed .main-navigation .nav ul li a,
-                #block_325_272dd4d5 .main-navigation .nav ul li a {
-                    background: #efefef;
-                    color: #000000;
-                }
-
-                #block_325_272dd4d5 .main-navigation .nav ul li a:hover,
-                #block_325_272dd4d5 .main-navigation .dropdown-menu .open a:hover,
-                #block_325_272dd4d5 .main-navigation .nav ul li a:focus,
-                #block_325_272dd4d5 .main-navigation .dropdown-menu .open a:focus,
-                #block_325_272dd4d5 .main-navigation .dropdown-menu .active a,
-                #block_325_272dd4d5 .main-navigation .dropdown-menu .active a:focus,
-                #block_325_272dd4d5 .main-navigation .dropdown-menu .active a:hover {
-                    background: #7dccdd !important;
-                    color: #000000 !important;
-                }
-
-                #block_325_272dd4d5 .navbar-toggle {
-                    background: #7dccdd;
-                    color: #000000;
-                    border: 1px solid #64a3b0ff;
-                }
-
-                #block_325_272dd4d5 .usual-menu.menu-style-tabbed {
-                    border-bottom: 5px solid #7dccdd;
-                }
-            </style>
-            <style type="text/css">
-                #block_325_272dd4d5 .main-menu-wrap.usual-menu.menu-style-regular .nav > li.current-menu-item > a,
-       #block_325_272dd4d5 .main-menu-wrap.usual-menu.menu-style-regular .nav > li > a:hover,
-       #block_325_272dd4d5 .main-menu-wrap.usual-menu.menu-style-regular .nav > li.open > a,
-       #block_325_272dd4d5 .main-menu-wrap.usual-menu.menu-fullwidth .nav > li.current-menu-item > a,
-       #block_325_272dd4d5 .main-menu-wrap.usual-menu.menu-fullwidth .nav > li > a:hover,
-       #block_325_272dd4d5 .main-menu-wrap.usual-menu.menu-fullwidth .nav > li.open > a { 	background-color: #7dccdd !important;}
-                #block_325_272dd4d5 .main-menu-wrap.usual-menu.menu-style-regular.gradient-1,
-                #block_325_272dd4d5 .main-menu-wrap.usual-menu.menu-style-tabbed.gradient-1,
-                #block_325_272dd4d5 .main-menu-wrap.usual-menu.menu-style-boxed.gradient-1
-                {
-                    background-color: #016671ff;
-                    background: linear-gradient(to bottom, #016671ff, #017783);
-                }
-                #block_325_272dd4d5 .gradient-1.main-menu-wrap.usual-menu.menu-style-tabbed .nav > li > a,
-                #block_325_272dd4d5 .gradient-1.main-menu-wrap.usual-menu.menu-style-boxed .nav > li > a
-                {
-                    background-color: #00000000;
-                    background: linear-gradient(to bottom, #00000000, rgba(0, 0, 0, 0));
-                }
-                #block_325_272dd4d5 .gradient-1.main-menu-wrap.usual-menu.menu-style-tabbed .nav > li.current-menu-item > a,
-                #block_325_272dd4d5 .gradient-1.main-menu-wrap.usual-menu.menu-style-tabbed .nav > li > a:hover,
-                #block_325_272dd4d5 .gradient-1.main-menu-wrap.usual-menu.menu-style-tabbed .nav > li.open > a,
-                #block_325_272dd4d5 .gradient-1.main-menu-wrap.usual-menu.menu-style-boxed .nav > li.current-menu-item > a,
-                #block_325_272dd4d5 .gradient-1.main-menu-wrap.usual-menu.menu-style-boxed .nav > li > a:hover,
-                #block_325_272dd4d5 .gradient-1.main-menu-wrap.usual-menu.menu-style-boxed .nav > li.open > a  {
-                    background-color: #6bafbeff;
-                    background: linear-gradient(to bottom, #6bafbeff, #7dccdd);
-                }            </style>
-            <div class="container-fluid"><div class="row"><div class="header-7-flex"><div class="col-md-7 col-sm-6 tdleft"><a href="https://bastionhl.com" class="brand logo-size-fullsize"><img decoding="sync" fetchpriority="high" loading="eager" alt="Bastion H&amp;L logo" src="/pics/logo black.png" data-id="0"></a></div><div class="col-md-5 col-sm-6 tdright" style="color: #777777">
-</div></div></div></div>        </div>
-                        <div id="main-menu-wrap" class="main-menu-wrap usual-menu menu-fullwidth menu-pos-left menu-style-regular gradient-1">
-            <div class="container-fluid">
-                <div class="row">
-                    
-                </div>
-            </div>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo-area">
+                <img src="/pics/logo black.png" width="60" height ="60">
+                <span class="brand-name">Bastion H&L</span>
+            </a>
+            <nav>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="https://forms.gle/iD3UbFAr9fCDSduq6">Contact</a>
+            </nav>
         </div>
+    </header>
 
-        <div class="slider-area fz-normal theme-default h7-slider-wrapper slick-initialized slick-slider"><div class="slick-list draggable" style="height: 283.641px;"><div class="slick-track" style="opacity: 1; width: 1167px;"><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 1167px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"><img decoding="sync" fetchpriority="high" loading="eager" alt="" src="https://cdn1.getnetset.com/wp-content/themes/customized/images/headers/1/31741-29732-23189-350.jpg" data-id="99" style="width:100%;height:100%;object-fit:contain;aspect-ratio:1440/350;" width="1440" height="350"></div></div></div></div>
-    </div>
-</header>
-<script type="text/javascript">
-    window.addEventListener("load", function() {
-        const sliderElement = document.querySelector('.h7-slider-wrapper');
-        if (sliderElement) {
-            jQuery(sliderElement).slick({
-                autoplay: true,
-                fade: true,
-                pauseOnHover: false,
-                pauseOnFocus: false,
-                autoplaySpeed: 7000,
-                adaptiveHeight: true,
-            });
-        }
-    });
-</script>
+    <div class="container">
+        <section class="hero">
+            <h1>We build robust<br>digital infrastructure.</h1>
+            <p>Static web architecture and secure design systems for modern businesses. Efficient, reliable, and built to last.</p>
+            <a href="#contact" class="btn">Start a Project</a>
+        </section>
 
-
-<div id="content" class="site-content">
-
-                                    <div class="container-fluid">
-                                    <div id="main-grid" class="row">
-                                        <div id="primary" class="content-area col-md-8 no-paddings">
-                                            <main id="main" class="site-main" role="main">
-                                                                                                <article id="post-325" class="post-325 page type-page status-publish hentry">
-                                                    <div class="entry-content">
-                                                    
-
-<section id="block_325-cafd7dac92ab5274" class="basic-text-block text-block padding-top-1 padding-bottom-1 margin-top-0 margin-bottom-0 talign-left">
-    <style type="text/css">
-        #block_325-cafd7dac92ab5274.text-block {background-image: none;background-size: cover;background-position: center center;color: #333333;}#block_325-cafd7dac92ab5274.text-block h2.text-block-title,#block_325-cafd7dac92ab5274.text-block h2.text-block-title {color: #333333;text-align: left;}#block_325-cafd7dac92ab5274.text-block p {color: #333333;}#block_325-cafd7dac92ab5274 .over-alpha {background-color: transparent;}#block_325-cafd7dac92ab5274 .over-alpha+.container,#block_325-cafd7dac92ab5274 .over-alpha+.container-fluid {position: relative;z-index: 120;}#block_325-cafd7dac92ab5274.text-inside {padding: 0 15px;}#block_325-cafd7dac92ab5274 .container-fluid {z-index: 101;position: relative;}    </style>
-    <div class="over-alpha"></div>
-    <div class="container-fluid">
-        <div class="row animatedParent animateOnce delay-250" data-sequence="0" data-appear-top-offset="-200">
-                            <h1 class="col-sm-12 text-block-title animated none go" data-id="1">
-                    <span style="color:#333333">Services</span>                </h1>
-                <div class="clearfix"></div>
-            
-                                <div class="col-md-12 text-inside animated none go" data-id="2">
-                        <p>If you’re looking for a firm that will focus on your individual needs, and always treat you like a client who matters, look no further.&nbsp; Our firm is large enough to offer a full range of professional services, but small enough to give you the individual attention that you deserve.</p>
-
-
-<h2 id="LocalFiling">Local Tax Filing for Domestic and International Entitites</h2>
-<p>Our local tax filing services provide accurate, compliant, and timely support for both domestic and international entities operating within our jurisdiction. We assist with preparing and submitting all required tax documents while ensuring alignment with local laws and international reporting obligations. Whether you are a resident business or a foreign company with local operations, our team offers tailored guidance to minimize risks, optimize tax positions, and meet all statutory deadlines with confidence.
-
-</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<p></p>
-<a href="contact.html"><h2>Contact us today!</h2></a>
-                    </div>
-                    </div>
-    </div>
-</section>    </div><!-- .entry-content -->
-    </article><!-- #post-## -->
-    </main><!-- #main -->
-
-    </div>
-    <!-- #secondary -->    </div>
-
-</div>
-
-    </div>
-
-<div class="footer-block">
-    <style type="text/css">
-        .footer-block {
-            background-color: #d9d9d9;
-            color: #333333;
-        }
-
-        .footer-block a {
-            color: #333333;
-        }
-
-        .footer-block a:hover {
-            color: #666666;
-        }
-    </style>
-    <div class="container-fluid">
+        <h2 class="section-title">Our Capabilities</h2>
+        <section class="grid" id="services">
+            <div class="card">
+                <h3>Structured Web Design</h3>
+                <p>We construct static websites with clean code architecture. No bloat, just performance. Your digital presence, fortified.</p>
             </div>
-</div>
+            <div class="card">
+                <h3>Interface Engineering</h3>
+                <p>User experiences designed with precision. We focus on logic and flow to ensure your users never get lost in the maze.</p>
+            </div>
+            <div class="card">
+                <h3>Secure Hosting</h3>
+                <p>Deployment strategies that prioritize uptime and security. We treat your data like a fortress.</p>
+            </div>
+        </section>
+    </div>
 
-<footer class="footer-block">
-    <style type="text/css">
-        .footer-block {
-            background-color: #d9d9d9;
-            color: #333333;
-        }
+    <section class="about" id="about">
+        <div class="container about-content">
+            <h2>About The Firm</h2>
+            <br>
+            <p>Bastion H&L LLC was founded on the principle that essential infrastructure should be unbreakable. We don't just build webpages; we engineer digital environments that withstand the test of time.</p>
+            <br>
+            <p>Our approach is methodical and transparent. We strip away the unnecessary noise to focus on what matters: stability, speed, and structural integrity.</p>
+        </div>
+    </section>
 
-        .footer-block a {
-            color: #333333;
-        }
-
-        .footer-block a:hover {
-            color: #666666;
-        }
-    </style>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-12">
-                <span class="copyright">Copyright © <span id="copyrightyear">2025</span> <a href="https://bastionhl.com">Bastion H&amp;L LLC</a> and/or its licensors</span> <br>            </div>
+    <div class="container" id="contact">
+        <h2 class="section-title">Get in Touch</h2>
+        <div style="margin-bottom: 60px;">
+            <h3>Ready to build?</h3>
+            <p style="margin-bottom: 20px;">Contact our team to discuss your architectural needs.</p>
+            <p><strong>Email:</strong> contact@bastionhl.com</p>
+            <!-- <p><strong>Location:</strong> [Your City, State]</p> -->
         </div>
     </div>
-</footer>
 
-			</div><!-- #page -->
-		</div><!-- #bg-container -->
-	</div><!-- .site-container -->
-	<style id="gns-contacts-bar-style-inline-css" type="text/css">
-.contacts-bar{padding:0 15px;overflow:hidden;width:100%}.contacts-bar.sticky-header{-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}.contacts-bar .type-1 .fa{vertical-align:middle;font-size:20px;left:10px}.contacts-bar .type-2 .fa{vertical-align:middle;font-size:20px;position:static}.contacts-bar .column{padding-top:10px;padding-bottom:10px;display:inline-block;margin-left:20px;white-space:nowrap;overflow:hidden}.contacts-bar .column.pull-left{margin-left:0;margin-right:20px}.contacts-bar li button{border:0;background:none}.contacts-bar li button:active,.contacts-bar li button:focus{outline:0}.contacts-bar a[href^=tel]{color:inherit !important;text-decoration:none !important}.contacts-bar .icon-links ul{display:inline-block;list-style:none;padding:0;margin:0}.contacts-bar .icon-links li{display:inline-block}@media screen and (max-width: 992px){.contacts-bar{text-align:center}.contacts-bar .icon-links .fa{font-size:32px}.contacts-bar .column.pull-right,.contacts-bar .column.pull-left{float:none !important;display:block;width:100%;margin:0}}@media screen and (max-width: 767px){.contacts-bar .icon-links .fa{font-size:32px}.contacts-bar .column{padding-left:40px;display:block;max-width:100% !important;margin-left:0;text-align:center !important;white-space:normal}.contacts-bar .column.pull-right,.contacts-bar .column.pull-left{float:none !important;display:block;width:100%;margin:0}}
+    <footer>
+        <div class="container">
+            &copy; 2025 Bastion H&L LLC. All Rights Reserved.
+        </div>
+    </footer>
 
-</style>
-<style id="gns-header7-style-inline-css" type="text/css">
-
-
-</style>
-<link rel="stylesheet" id="slick-style-css" href="https://cdn1.getnetset.com/wp-content/themes/customized4/lib/slick/slick.css?ver=1.8.0" type="text/css" media="">
-<link rel="stylesheet" id="slick-style-theme-css" href="https://cdn1.getnetset.com/wp-content/themes/customized4/lib/slick/slick-theme.css?ver=1.8.0" type="text/css" media="">
-<style id="gns-text-block-style-inline-css" type="text/css">
-.block-library-classic__toolbar{display:block !important;border:none}.block-library-classic__toolbar:empty{display:none !important}.basic-text-block{position:relative}.basic-text-block h2.text-block-title,.basic-text-block h3{font-size:30px;font-weight:400}.basic-text-block p{font-size:1em;margin-top:25px;font-weight:400}
-
-</style>
-<style id="gns-footer-style-inline-css" type="text/css">
-.footer-block{padding-top:1em;padding-bottom:1em;position:relative;font-size:1em;line-height:1.4}.footer-block a{font-weight:500;text-decoration:underline}.footer-block a:hover{text-decoration:none}
-
-</style>
-<script type="text/javascript" src="https://cdn1.getnetset.com/wp-content/mu-plugins/cf_check.js?ver=20.6.29" id="ishuman_js-js"></script>
-<script type="text/javascript" src="https://cdn1.getnetset.com/wp-content/plugins/gns-ccms/public/js/form-logic-script.js?ver=1.0.0" id="signup-form-js"></script>
-<script type="text/javascript" src="https://cdn1.getnetset.com/wp-content/themes/customized4/lib/bootstrap/js/bootstrap.min.js?ver=3.1.0" id="bootstrap-js"></script>
-<script type="text/javascript" src="https://cdn1.getnetset.com/wp-content/themes/customized4/lib/css3-animate-it-master/js/css3-animate-it.js?ver=0.1.0" id="css3-animations-js"></script>
-<script type="text/javascript" src="https://cdn1.getnetset.com/wp-content/themes/customized4/assets/js/menu-mobile.js?ver=1.0" id="mobile-menu-js-js"></script>
-<script type="text/javascript" src="https://cdn1.getnetset.com/wp-content/themes/customized4/assets/js/theme.js?ver=20.6.29" id="theme-js"></script>
-<script type="text/javascript" src="https://cdn1.getnetset.com/wp-content/themes/customized4/lib/slick/slick.min.js?ver=1.8.0" id="slick-js"></script>
-
-
-</body></html>
+</body>
+</html>
